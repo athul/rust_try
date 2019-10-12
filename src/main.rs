@@ -1,3 +1,13 @@
-fn main() {
-    println!("Eda Monuse, Ith Work Cheyyunundo?😄");
+use std::io;
+
+fn main(){
+println!("Guess the Number");
+println!("Input your guess");
+
+let mut guess=String::new();
+
+io::stdin().read_line(&mut guess)
+    .expect("Failed to Read Line");
+
+println!("You guessed:{}",guess);
 }
